@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>WfcLib</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Extensions.cs" />
+      <Compile Remove="WfcGenerator.cs" />
+      <Compile Include="..\WfcLibSrc\Extensions.cs">
+        <Link>Extensions.cs</Link>
+      </Compile>
+      <Compile Include="..\WfcLibSrc\WfcGenerator.cs">
+        <Link>WfcGenerator.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+</Project>
